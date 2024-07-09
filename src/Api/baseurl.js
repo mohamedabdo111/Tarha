@@ -1,5 +1,5 @@
 import axios from "axios";
 
-const baseurl = axios.create({ baseURL: "http://tarha.runasp.net/api" });
+const baseurl = axios.create({ baseURL: "https://tarhaa.runasp.net/api" });
 
 export default baseurl;
