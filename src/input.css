@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap");
+
+body {
+  font-family: "Cairo", sans-serif;
+}
+.imagecover {
+  /* height: 300px; */
+  position: relative;
+}
+
+.imagecover img {
+  position: absolute;
+}
+
+.hoh {
+  height: calc(96% / 4);
+}
+
+.hoh img {
+  height: 100%;
+}
+
+.tran {
+  transition: all 0.5s;
+}
+
+.bageparent {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+.delparent {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+}
+
+.laodinggg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 300px;
+  height: 300px;
+  transform: translate(-50%, -50%);
+}
