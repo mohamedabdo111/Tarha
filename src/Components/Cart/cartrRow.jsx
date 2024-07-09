@@ -8,7 +8,7 @@ const CartrRow = ({ dataCart, index, removeFromCart }) => {
     <Row className="flex-row-reverse justify-between py-3 border-b-2">
       <Col md="8" className="flex flex-row-reverse align-items-center">
         <img
-          src={`http://tarha.runasp.net/${
+          src={`http://tarhaa.runasp.net/${
             dataCart && dataCart.img ? dataCart.img : null
           }`}
           alt="imageCart"

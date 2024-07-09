@@ -7,7 +7,7 @@ const ImagesDetails = ({ Images, load }) => {
   // const OneImage = `http://tarha.runasp.net/${Images}`;
   const x =
     Images && Images.length >= 1
-      ? `http://tarha.runasp.net/${Images[0]}`
+      ? `https://tarhaa.runasp.net/${Images[0]}`
       : null;
   const [imageOne, setImage] = useState("");
   const onclick = (e) => {
@@ -38,7 +38,7 @@ const ImagesDetails = ({ Images, load }) => {
                       key={index}
                     >
                       <img
-                        src={`https://tarhaa.runasp.net/${item}`}
+                        src={`http://tarhaa.runasp.net/${item}`}
                         alt="ImageDetails"
                         onClick={onclick}
                       />
