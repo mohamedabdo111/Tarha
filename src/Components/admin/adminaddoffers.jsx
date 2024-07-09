@@ -11,7 +11,7 @@ const AdminAddOffers = () => {
     setImages,
     upload,
     AddCover,
-    crop,
+
     onSubmit,
     onSubmitOffers,
     onChangeName,
@@ -48,9 +48,11 @@ const AdminAddOffers = () => {
           <MultiImageInput
             images={images}
             setImages={setImages}
-            cropConfig={{ crop, ruleOfThirds: true }}
+            // cropConfig={{ crop, ruleOfThirds: true }}
             theme={"light"}
-            max={4}
+            max={3}
+            // cropConfig={null}
+            allowCrop={false}
           />
         </Col>
         <Col sm="7">

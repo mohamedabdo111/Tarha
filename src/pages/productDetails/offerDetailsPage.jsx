@@ -19,6 +19,7 @@ const OfferDetailsPage = () => {
         <ImagesDetails
           Images={details ? details.url : null}
           load={loadingRes}
+          ImagesCover={details ? details.mainImageUrl : null}
         ></ImagesDetails>
       </div>
     </Container>

@@ -9,8 +9,6 @@ const ProductDeatilsPage = () => {
   const { id } = useParams();
   const [details, loadingRes] = GetOneProductDetailsHock(id);
 
-  console.log(details);
-
   return (
     <Container>
       <div className=" grid sm:grid-cols-1 md:grid-cols-2 gap-3 my-12  ">
@@ -18,6 +16,7 @@ const ProductDeatilsPage = () => {
         <ImagesDetails
           Images={details ? details.url : null}
           load={loadingRes}
+          ImagesCover={details ? details.mainImageUrl : null}
         ></ImagesDetails>
       </div>
     </Container>

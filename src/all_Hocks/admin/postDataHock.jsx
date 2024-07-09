@@ -42,7 +42,6 @@ const PostDataHock = () => {
     setPrice(e.target.value);
   };
 
-  console.log(imagecover);
   function dataURLtoFile(dataurl, filename) {
     var arr = dataurl.split(","),
       mime = arr[0].match(/:(.*?);/)[1],
@@ -55,11 +54,6 @@ const PostDataHock = () => {
     return new File([u8arr], filename, { type: mime });
   }
 
-  const crop = {
-    unit: "%",
-    aspect: 4 / 3,
-    width: "100",
-  };
   const onSubmit = async () => {
     const imagearr = Array.from(Array(Object.keys(images).length).keys()).map(
       (i, index) => {
@@ -184,7 +178,7 @@ const PostDataHock = () => {
     setImages,
     upload,
     AddCover,
-    crop,
+
     onSubmit,
     onSubmitOffers,
     onChangeName,

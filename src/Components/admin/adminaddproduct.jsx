@@ -9,7 +9,7 @@ const Adminaddproduct = () => {
     setImages,
     upload,
     AddCover,
-    crop,
+
     onSubmit,
     onSubmitOffers,
     onChangeName,
@@ -46,9 +46,9 @@ const Adminaddproduct = () => {
           <MultiImageInput
             images={images}
             setImages={setImages}
-            cropConfig={{ crop, ruleOfThirds: true }}
+            allowCrop={false}
             theme={"light"}
-            max={4}
+            max={3}
           />
         </Col>
         <Col sm="7">
