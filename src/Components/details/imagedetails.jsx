@@ -16,7 +16,7 @@ const ImagesDetails = ({ Images, load, ImagesCover }) => {
       {load ? (
         <SpinnerHock></SpinnerHock>
       ) : (
-        <div className=" grid grid-cols-4 gap-2 ">
+        <div className=" grid grid-cols-4 gap-2 imagestyle">
           <div className="OneImage col-span-3 rounded-md overflow-auto">
             <img
               src={
@@ -26,8 +26,8 @@ const ImagesDetails = ({ Images, load, ImagesCover }) => {
               className=" w-full h-full object-fill"
             />
           </div>
-          <div className="allImages h-full">
-            <div className="  cursor-pointer rounded-md overflow-hidden mb-2 hoh">
+          <div className="allImages imagestyle ">
+            <div className=" cursor-pointer rounded-md overflow-hidden mb-2 hoh">
               <img
                 src={`https://tarhaa.runasp.net/${ImagesCover}`}
                 alt="ImageDetails"
