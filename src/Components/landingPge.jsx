@@ -31,7 +31,7 @@ const LandingPage = () => {
               );
             })
           ) : (
-            <h1 className=" fw-bold fs-1 col-span-4 text-center my-4 sm:col-span-2 md:col-span-3 lg:col-span-5 ">
+            <h1 className=" fw-bold fs-1  text-center my-4 sm:col-span-2 md:col-span-3 lg:col-span-5 ">
               لا يوجد منتجات
             </h1>
           )}
@@ -53,7 +53,7 @@ const LandingPage = () => {
               );
             })
           ) : (
-            <h1 className=" fw-bold fs-1 col-span-4 text-center my-4 sm:col-span-2 md:col-span-3 lg:col-span-5 ">
+            <h1 className=" fw-bold fs-1 text-center my-4 sm:col-span-2 md:col-span-3 lg:col-span-5 ">
               لا يوجد عروض
             </h1>
           )}
