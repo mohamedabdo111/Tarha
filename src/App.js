@@ -39,7 +39,7 @@ const App = () => {
           {/* admin roles */}
           <Route element={<ProtectedRoute auth={isAdmin}></ProtectedRoute>}>
             <Route
-              path="/admin/addproduct"
+              path="admin/addproduct"
               element={<AdminAddProductPage></AdminAddProductPage>}
             ></Route>
             <Route
