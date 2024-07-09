@@ -4,8 +4,14 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCartShopping } from "@fortawesome/free-solid-svg-icons";
+import { Button } from "react-bootstrap";
 
 const NavbarComponent = () => {
+  // const adminIsthere = if()
+
+  // if () {
+  //   console.log(JSON.parse(localStorage.getItem("AdminData")).email);
+  // }
   return (
     <Navbar expand="lg" className="bg-body-tertiary">
       <Container>
@@ -37,13 +43,23 @@ const NavbarComponent = () => {
             </Nav.Link> */}
           </Nav>
 
-          <div>
-            <div className="fs-4 cursor-pointer">
+          <div className=" flex justify-center">
+            <div className="fs-4 cursor-pointer ">
               <a href="/cart">
                 <FontAwesomeIcon icon={faCartShopping}></FontAwesomeIcon>
 
                 <p className=" d-inline ms-1">Cart</p>
               </a>
+            </div>
+            <div>
+              {JSON.parse(localStorage.getItem("AdminData")) != null &&
+              JSON.parse(localStorage.getItem("AdminData")).email ? (
+                <a href="/admin/addproduct">
+                  <Button className="  bg-transparent text-zinc-900 border-zinc-900 hover:text-purple-500 mx-2">
+                    Admin
+                  </Button>
+                </a>
+              ) : null}
             </div>
           </div>
         </Navbar.Collapse>

@@ -7,17 +7,19 @@ import LoginHock from "../../all_Hocks/Auth/loginHock";
 const LoginAdmin = () => {
   const [email, password, onChangeEmail, onChangePassword, onClick, x] =
     LoginHock();
-  console.log(email);
-  console.log(password);
 
   return (
     <div
       className="mx-auto mt-16"
-      style={{ maxWidth: "500px", minHeight: "70vh" }}
+      style={{ maxWidth: "500px", minHeight: "78vh" }}
     >
       <div className=" h-20">{x}</div>
       <Form>
-        <Form.Group as={Row} className="mb-3" controlId="formHorizontalEmail">
+        <Form.Group
+          as={Row}
+          className="mb-3 w-full mx-auto"
+          controlId="formHorizontalEmail"
+        >
           <Col className="text-center">
             <Form.Control
               type="email"
@@ -29,7 +31,7 @@ const LoginAdmin = () => {
 
         <Form.Group
           as={Row}
-          className="mb-3"
+          className="mb-3 w-full mx-auto"
           controlId="formHorizontalPassword"
         >
           <Col className="text-center">
@@ -41,8 +43,8 @@ const LoginAdmin = () => {
           </Col>
         </Form.Group>
 
-        <Form.Group as={Row} className="mb-3">
-          <Col className="text-center">
+        <Form.Group as={Row} className="mb-3 w-full">
+          <Col className="text-center ">
             <Button
               type="submit"
               className=" w-72 bg-zinc-900 border-0 hover:bg-zinc-800 "

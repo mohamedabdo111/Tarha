@@ -38,7 +38,7 @@ const ImagesDetails = ({ Images, load }) => {
                       key={index}
                     >
                       <img
-                        src={`http://tarha.runasp.net/${item}`}
+                        src={`https://tarhaa.runasp.net/${item}`}
                         alt="ImageDetails"
                         onClick={onclick}
                       />
