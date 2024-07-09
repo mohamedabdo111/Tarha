@@ -50,7 +50,7 @@ const Cards = ({ AllData, urlll }) => {
 
         <div className="imgParent h-52 overflow-hidden ">
           <img
-            src={`http://tarha.runasp.net/${
+            src={`https://tarhaa.runasp.net/${
               AllData ? AllData.mainImageUrl : null
             }`}
             alt="imageProduct"
